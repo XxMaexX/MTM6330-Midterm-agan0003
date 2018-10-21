@@ -1,0 +1,190 @@
+@import 'normalize';
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.section {
+    position: relative;
+    width: 100%;
+}
+
+img#expandedImg {
+    width: 100%;
+}
+
+/* image styling */
+.image {
+    display: block;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: auto;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 20px 10px;
+    text-align: left;
+}
+
+.section:hover .overlay {
+    opacity: 1;
+}
+
+.photo img {
+    width: 190px;
+    height: 190px;
+    float: right;
+    position: relative;
+    right: 15px;
+    bottom: 5px;
+}
+
+/* Style the images inside the grid */
+.column img {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+/* The expanding image container */
+.container {
+    position: relative;
+}
+
+/* Expanding image text */
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    margin-top: 5px;
+    border: 0 solid grey;
+    float: left;
+    width: 170px;
+    margin-right: 20px;
+    background: #f1f1f1;
+}
+
+form.example button {
+    float: left;
+    padding: 10px;
+    color: white;
+    font-size: 17px;
+    border: 0 solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.example button:hover {
+    background: #38363b;
+}
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* main content of body */
+.column-1 {
+    float: left;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #38363b;
+    color: white;
+}
+
+.column-1 p {
+    text-align: center;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column-1 h2 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.column {
+    width: 100%;
+}
+
+.column .overlay a {
+    color: white;
+    text-decoration: none;
+}
+
+.column img {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* mobile and tablet view */
+@media (max-width: 780px) {
+
+    /* main content in the body */
+    .column-1 {
+        width: 100%;
+        height: auto;
+        display: block;
+        background-color: #38363b;
+        color: white;
+    }
+
+    .column-1 a {
+        color: white;
+        list-style-type: none;
+        text-decoration: none;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+}

@@ -1,0 +1,545 @@
+* {
+    box-sizing: border-box;
+}
+
+.category-menus,
+.h1,
+.h2,
+.h3 {
+    font-family: 'PT Sans', sans-serif;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+}
+
+.section {
+    position: relative;
+    width: 100%;
+
+}
+
+img#expandedImg {
+    width: 100%;
+}
+
+/* image styling */
+.image {
+    display: block;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: auto;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 20px 10px;
+    text-align: left;
+}
+
+.section:hover .overlay {
+    opacity: 1;
+}
+
+.photo img {
+    width: 190px;
+    height: 190px;
+    float: right;
+    position: relative;
+    right: 15px;
+    bottom: 5px;
+}
+
+/* Style the images inside the grid */
+.column img {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+/* The expanding image container */
+.container {
+    position: relative;
+    display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    margin-top: 5px;
+    border: 0 solid grey;
+    float: left;
+    width: 170px;
+    margin-right: 20px;
+    background: #f1f1f1;
+}
+
+form.example button {
+    float: left;
+    padding: 10px;
+    color: white;
+    font-size: 17px;
+    border: 0 solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.example button:hover {
+    background: #38363b;
+}
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* navigation */
+.top-navigation {
+    background-color: #edebec;
+}
+
+form {
+    float: right;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.category-menus ul li {
+    float: left;
+}
+
+.search-container {
+    margin: auto;
+}
+
+/* logo banner */
+.logo {
+    padding: 30px;
+    height: 130px;
+    width: 130px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #d0d1d2;
+}
+
+#nav ul li {
+    float: left;
+    margin-left: 30px;
+    line-height: 40px;
+}
+
+/* main content of body */
+.column-1 {
+    float: left;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #38363b;
+    color: white;
+}
+
+.column-1 p {
+    text-align: center;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column-1 h2 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.column {
+    width: 100%;
+}
+
+.column .overlay a {
+    color: white;
+    text-decoration: none;
+}
+
+.column img {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* footer */
+.content {
+    margin-top: 60px;
+    background-color: #edebec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.container {
+    border: 1px solid #ccc;
+    padding: 16px;
+    border-style: none;
+}
+
+.content a {
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    text-decoration: none;
+    color: black;
+}
+
+.content li {
+    height: 2rem;
+
+}
+
+.signUp {
+    padding: 3rem;
+}
+
+.social-media {
+    width: 225px;
+}
+
+.social-media a {
+    padding-bottom: 2rem;
+    margin: 25px;
+}
+
+.social-media a img {
+    width: 50px;
+    height: 50px;
+}
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+button {
+    background-color: #38363b;
+    color: white;
+    margin: 4px 0 !important;
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+.signupbtn {
+    width: 50%;
+    height: 43px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container {
+    border: none;
+    border-style: none;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media screen and (max-width: 300px) {
+    .signupbtn {
+        width: 100%;
+    }
+}
+
+/* copyright  */
+.copyright {
+    float: right;
+    background-color: #d0d1d2;
+    width: 100%;
+    margin-top: -16px;
+}
+
+.text {
+    float: right;
+    margin-right: 20px;
+}
+
+/* mobile and tablet view */
+@media (max-width: 780px) {
+
+    /* search bar */
+    form.example input[type=text] {
+        padding: 10px;
+        font-size: 17px;
+        margin-top: 5px;
+        border: 0 solid grey;
+        float: left;
+        width: 170px;
+        margin-right: 20px;
+        background: #f1f1f1;
+    }
+
+    form.example button {
+        float: left;
+        padding: 10px;
+        color: white;
+        font-size: 17px;
+        border: 0 solid grey;
+        border-left: none;
+        cursor: pointer;
+    }
+
+    form.example button:hover {
+        background: #38363b;
+    }
+
+    form.example::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    /* navigation bar */
+    .top-navigation {
+        background-color: #edebec;
+    }
+
+    form {
+        float: right;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .category-menus ul li {
+        float: left;
+    }
+
+    li a:hover {
+        background-color: #d0d1d2;
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    #nav ul li {
+        float: left;
+        margin-left: 30px;
+        line-height: 40px;
+    }
+
+    /* main content in the body */
+    .column-1 {
+        width: 100%;
+        height: auto;
+        display: block;
+        background-color: #38363b;
+        color: white;
+    }
+
+    .column-1 a {
+        color: white;
+        list-style-type: none;
+        text-decoration: none;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* footer */
+    .content {
+        width: 100%;
+        background-color: #edebec;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-media {
+        width: 120px;
+        text-align: center;
+        display: contents;
+    }
+
+    .social-media a {
+        padding-bottom: 2rem;
+        margin: 25px;
+    }
+
+    .social-media a img {
+        width: 50px;
+        height: 50px;
+    }
+
+    input[type=text],
+    input[type=password] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+    }
+
+    input[type=text]:focus,
+    input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+    }
+
+    hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+    }
+
+    button {
+        background-color: #38363b;
+        color: white;
+        margin: 8px 0;
+        margin-top: 4px;
+        width: 40px;
+        height: 40px;
+        border: none;
+        cursor: pointer;
+        opacity: 0.9;
+    }
+
+    button:hover {
+        opacity: 1;
+    }
+
+    .signupbtn {
+        width: 50%;
+        height: 43px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .container {
+        padding: 16px;
+        border-style: none;
+    }
+
+    .signUp {
+        border: 1px solid #ccc;
+    }
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    @media screen and (max-width: 300px) {
+        .signupbtn {
+            width: 100%;
+        }
+    }
+
+    /* copyright */
+    .copyright {
+        float: right;
+        background-color: #d0d1d2;
+        width: 100%;
+        margin-top: -16px;
+    }
+
+    .text {
+        float: right;
+        margin-right: 20px;
+    }
+}
