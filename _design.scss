@@ -5,7 +5,7 @@
   box-sizing: inherit;
 }
 
-/* main content of website */
+// main content of website
 .banner {
     margin: 2% 0;
 }
@@ -23,7 +23,7 @@
     display: flex;
 }
 
-/* image styling */
+// image styling
 .photo01,
 .photo02,
 .photo03 {
@@ -53,7 +53,7 @@
     box-shadow: inherit;
 }
 
-    /* return back to portfolio page */
+    // return back to portfolio page
 .back {
     text-decoration: overline;
     background-color: white;
@@ -63,10 +63,10 @@
     margin: 2rem;
 }
 
-/* mobile and tablet view */
+// mobile and tablet view
 @media (max-width: 780px) {
 
-    /* main content of website */
+    // main content of website
     .column-1 {
         width: 100%;
         height: 100%;
@@ -76,7 +76,7 @@
         text-align: center;
     }
 
-    /* image styling */
+    // image styling
     .photo01,
     .photo02,
     .photo03 {
@@ -86,7 +86,7 @@
         margin: 0 auto;
     }
 
-    /* return back to portfolio page */
+    // return back to portfolio page
     .back {
         background-color: white;
         color: black;

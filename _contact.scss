@@ -4,7 +4,7 @@
 *::after {
   box-sizing: inherit;
 }
-/* google map */
+// google map 
 .mapouter {
     text-align: right;
     height: 100%;
@@ -23,7 +23,7 @@ iframe {
     height: 75%;
 }
 
-/* contact form */
+// contact form 
 input[type=frame],
 select,
 textarea {
@@ -66,7 +66,7 @@ label {
     padding: 15px;
 }
 
-/* main content of website */
+// main content of website 
 .column-1,
 .column-2 {
     float: left;
@@ -113,10 +113,10 @@ label {
     clear: both;
 }
 
-/* mobile and tablet view */
+// mobile and tablet view 
 @media (max-width: 780px) {
 
-    /* main content of website */
+    // main content of website 
     .column-1,
     .column-2 {
         width: 100%;

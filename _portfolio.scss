@@ -14,7 +14,7 @@ img#expandedImg {
     width: 100%;
 }
 
-/* image styling */
+// image styling
 .image {
     display: block;
     height: auto;
@@ -48,7 +48,7 @@ img#expandedImg {
     bottom: 5px;
 }
 
-/* Style the images inside the grid */
+// Style the images inside the grid
 .column img {
     opacity: 0.8;
     cursor: pointer;
@@ -58,12 +58,12 @@ img#expandedImg {
     opacity: 1;
 }
 
-/* The expanding image container */
+// The expanding image container
 .container {
     position: relative;
 }
 
-/* Expanding image text */
+// Expanding image text
 #imgtext {
     position: absolute;
     bottom: 15px;
@@ -72,7 +72,7 @@ img#expandedImg {
     font-size: 20px;
 }
 
-/* Closable button inside the expanded image */
+// Closable button inside the expanded image
 .closebtn {
     position: absolute;
     top: 10px;
@@ -113,7 +113,7 @@ form.example::after {
     display: table;
 }
 
-/* main content of body */
+// main content of body
 .column-1 {
     float: left;
     width: 100%;
@@ -163,10 +163,10 @@ body {
     clear: both;
 }
 
-/* mobile and tablet view */
+// mobile and tablet view
 @media (max-width: 780px) {
 
-    /* main content in the body */
+    // main content in the body
     .column-1 {
         width: 100%;
         height: auto;
